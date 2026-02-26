@@ -68,7 +68,7 @@ public class Time
             hour12 = 12;
         }
         string tt = Hour < 12 ? "AM" : "PM";
-        return $"{hour12:00}:{Minute:00}:{Second:00}:{Millisecond:000} {tt}";
+        return $"{hour12:00}:{Minute:00}:{Second:00}.{Millisecond:000} {tt}";
     }
     public long ToMilliseconds()
     {
