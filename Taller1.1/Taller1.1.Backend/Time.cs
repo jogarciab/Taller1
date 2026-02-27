@@ -5,11 +5,13 @@ namespace Taller1._1.Backend;
 
 public class Time
 {
+    // Fields
     private int _hour;
     private int _minute;
     private int _second;
     private int _millisecond;
 
+    // Constructors
     public Time()
     {
         _hour = 0;
@@ -40,6 +42,7 @@ public class Time
         Millisecond = milisecond;
     }
 
+    // Properties
     public int Hour 
     { 
         get => _hour; 
@@ -60,6 +63,8 @@ public class Time
         get => _millisecond;
         set => _millisecond = ValidMillisecond(value);
     }
+
+    // Methods
     public override string ToString()
     {
         int hour12 = Hour % 12;
